@@ -27,6 +27,13 @@ Next.js 8 boilerplate with redux, redux-saga, styled-components, SASS
     $ npm start # or yarn start
     ```
 
+### Testing
+
+- Standard.js Lint Test
+    ```bash
+    $ npm run standard # or yarn standard
+    ```
+
 ### Project Directory
 
 ```
