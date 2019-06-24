@@ -1,0 +1,32 @@
+{
+  "name": "nextku-saga",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "standard": "standard"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.1.0",
+    "next-redux-saga": "4.0.0",
+    "next-redux-wrapper": "2.0.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "5.0.7",
+    "redux": "4.0.1",
+    "redux-devtools-extension": "2.13.2",
+    "redux-saga": "1.0.1",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "standard": "^12.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
