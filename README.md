@@ -49,7 +49,7 @@ Next.js 8 boilerplate with redux, redux-saga, styled-components, SASS
 
 `src/actions` - Redux actions
 
-`src/components/` - Pure React components.
+`src/components` - Pure React components.
 
 `src/components/styled` - React styled-component
 
