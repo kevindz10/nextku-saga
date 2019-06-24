@@ -13,6 +13,7 @@ Next.js 8 boilerplate with redux, redux-saga, styled-components, SASS
 ### Getting Started
 
 - Development
+
     ```bash
     # Clone the repo and then run
     $ npm install # or yarn install
@@ -20,6 +21,7 @@ Next.js 8 boilerplate with redux, redux-saga, styled-components, SASS
     ```
 
 - Production
+
     ```bash
     # Clone the repo and then run
     $ npm install # or yarn install
@@ -30,6 +32,7 @@ Next.js 8 boilerplate with redux, redux-saga, styled-components, SASS
 ### Testing
 
 - Standard.js Lint Test
+
     ```bash
     $ npm run standard # or yarn standard
     ```
