@@ -1,6 +1,6 @@
-import { actionTypes } from './actions'
+import { actionTypes } from '../actions'
 
-export const exampleInitialState = {
+const initialState = {
   count: 0,
   error: false,
   lastUpdate: 0,
@@ -8,7 +8,7 @@ export const exampleInitialState = {
   placeholderData: null
 }
 
-function reducer (state = exampleInitialState, action) {
+export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.FAILURE:
       return {
@@ -31,7 +31,7 @@ function reducer (state = exampleInitialState, action) {
     case actionTypes.RESET:
       return {
         ...state,
-        ...{ count: exampleInitialState.count }
+        ...{ count: initialState.count }
       }
 
     case actionTypes.LOAD_DATA_SUCCESS:
@@ -50,5 +50,3 @@ function reducer (state = exampleInitialState, action) {
       return state
   }
 }
-
-export default reducer

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { startClock, tickClock } from '../actions'
+import { startClock, tickClock } from '../src/actions'
 import Page from '../src/components/page'
 
 class Index extends React.Component {
@@ -17,7 +17,7 @@ class Index extends React.Component {
   }
 
   render () {
-    return <Page title='Index Page' linkTo='/other' NavigateTo='Other Page' />
+    return <Page title='Index Page' />
   }
 }
 
