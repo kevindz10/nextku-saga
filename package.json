@@ -6,7 +6,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "standard": "standard"
+    "standard": "standard",
+    "test": "jest --verbose"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -24,9 +25,24 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "react-test-renderer": "^16.8.6",
     "standard": "^12.0.1"
   },
   "standard": {
     "parser": "babel-eslint"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next",
+      "<rootDir>/node_modules",
+      "<rootDir>/test/setup.js"
+    ],
+    "setupFiles": [
+      "<rootDir>/test/setup"
+    ]
   }
 }
