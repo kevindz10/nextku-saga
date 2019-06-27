@@ -4,8 +4,7 @@ const initialState = {
   count: 0,
   error: false,
   lastUpdate: 0,
-  light: false,
-  placeholderData: null
+  light: false
 }
 
 export default (state = initialState, action) => {
@@ -32,12 +31,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         ...{ count: initialState.count }
-      }
-
-    case actionTypes.LOAD_DATA_SUCCESS:
-      return {
-        ...state,
-        ...{ placeholderData: action.data }
       }
 
     case actionTypes.TICK_CLOCK:
