@@ -2,7 +2,7 @@ import { all, call, delay, put, take } from 'redux-saga/effects'
 
 import { actionTypes, tickClock } from '../actions'
 
-function * runClockSaga () {
+export function * runClockSaga () {
   yield take(actionTypes.START_CLOCK)
   while (true) {
     yield put(tickClock(false))
